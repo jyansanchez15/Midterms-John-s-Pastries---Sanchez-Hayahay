@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Now</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2 style="text-align: center; margin-top: 100px">Juan's Bakeshop</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="food">Cake Flavor:</label>
+        <select id="food" name="food" required>
+          <option value="">--Please choose an option--</option>
+          <option value="">Strawberries and Cream</option>
+          <option value="">Salted Caramel</option>
+          <option value="">Lemon Blueberry</option>
+          <option value="">Red Velvet</option></select
+        ><br />
+
+        <label for="food">Design:</label>
+        <select id="food" name="food" required>
+          <option value="">--Please choose an option--</option>
+          <option value="">Musical Cake</option>
+          <option value="">Racecar Cake</option>
+          <option value="">Princess Castle Cake</option>
+          <option value="">Wedding Cake</option></select
+        ><br />
+
+        <label for="food">Size:</label>
+        <select id="food" name="food" required>
+          <option value="">--Please choose an option--</option>
+          <option value="">8"</option>
+          <option value="">10"</option>
+          <option value="">12"</option>
+          <option value="">14"</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          value="1"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="area">Special Instruction:</label>
+        <input type="text" id="area" name="area" required />
+      </div>
+
+      <div class="button-container">
+        <button type="submit" class="submit">Submit Order</button>
+        <button type="reset" class="cancel" onclick="this.form.reset();">Cancel</button>
+      </div>
+    </form>
+  </body>
+</html>
